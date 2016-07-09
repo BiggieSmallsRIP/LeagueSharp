@@ -302,7 +302,7 @@ namespace Challenger_Series
             UseEComboStringList = MainMenu.Add(new MenuList<string>("useecombo", "Use E Combo", new [] {"CHALLENGER", "BRONZE", "NEVER"}));
             UseEKSBool = MainMenu.Add(new MenuBool("useeks", "Use E KS if Q on CD", true));
             UseRComboKeybind = MainMenu.Add(new MenuKeyBind("usercombo", "Use R Combo", Keys.R, KeyBindType.Press));
-            EscapeKey = new MenuKeyBind("ireesckey", "Escape (Flee) Key: ", Keys.I, KeyBindType.Press);
+            EscapeKey = MainMenu.Add(new MenuKeyBind("ireesckey", "Escape (Flee) Key: ", Keys.N, KeyBindType.Press);
             QGapcloseModeStringList =
                 MainMenu.Add(new MenuList<string>("qgc", "Q Gapcloser Mode",
                     new[] {"ONLY-CLOSEST-TO-TARGET", "ALL-KILLABLE-MINIONS"}));
